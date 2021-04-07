@@ -11,12 +11,6 @@ import com.xysss.ramandemo.R;
 
 import java.math.BigDecimal;
 
-/**
- * @author Lai
- * @time 2018/5/13 17:32
- * @describe describe
- */
-
 public class DetailsMarkerView extends MarkerView {
 
     private TextView mTvMonth;

@@ -5,13 +5,6 @@ import android.content.Context;
 import com.github.mikephil.charting.components.MarkerView;
 import com.xysss.ramandemo.R;
 
-
-/**
- * @author Lai
- * @time 2018/5/26 14:31
- * @describe describe
- */
-
 public class PositionMarker extends MarkerView {
 
     /**

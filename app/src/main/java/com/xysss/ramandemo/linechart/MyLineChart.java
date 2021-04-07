@@ -9,12 +9,6 @@ import com.github.mikephil.charting.charts.LineChart;
 
 import java.lang.ref.WeakReference;
 
-/**
- * @author Lai
- * @time 2018/5/26 14:27
- * @describe describe
- */
-
 public class MyLineChart extends LineChart {
 
     //弱引用覆盖物对象,防止内存泄漏

@@ -1,22 +1,11 @@
-package com.xysss.ramandemo;
+package com.xysss.ramandemo.dao;
 
-/**
- * Created by bysd-2 on 2017/11/25.
- */
-
-/**
- * 自建库所需对象；
- */
 public class CustomLibs {
-
     private int code;
     private String name;
     private String saveUrl;
-
-
     public CustomLibs() {
     }
-
 
     public CustomLibs(int code, String name, String saveUrl) {
         this.code = code;

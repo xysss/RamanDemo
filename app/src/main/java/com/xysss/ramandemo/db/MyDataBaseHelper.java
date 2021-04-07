@@ -1,4 +1,4 @@
-package com.xysss.ramandemo;
+package com.xysss.ramandemo.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

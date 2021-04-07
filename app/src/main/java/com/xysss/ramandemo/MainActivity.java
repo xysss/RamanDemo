@@ -33,11 +33,16 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
+import com.xysss.ramandemo.dao.ComBean;
+import com.xysss.ramandemo.dao.CustomLibs;
+import com.xysss.ramandemo.db.MyDataBaseHelper;
 import com.xysss.ramandemo.linechart.DetailsMarkerView;
 import com.xysss.ramandemo.linechart.MPDescription;
 import com.xysss.ramandemo.linechart.MyLineChart;
 import com.xysss.ramandemo.linechart.PositionMarker;
 import com.xysss.ramandemo.linechart.RoundMarker;
+import com.xysss.ramandemo.utils.DBUtils;
+import com.xysss.ramandemo.utils.MyFunc;
 
 import java.lang.ref.WeakReference;
 import java.net.DatagramPacket;
@@ -267,7 +272,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     byte[] buf = testCode.getBytes();
                     //byte[] buf = MyFunc.HexToByteArr(testCode);
                     //UDP是无连接的，所以要在发送的数据包裹中指定要发送到的ip：port
-                    String userIpStr=MyFunc.getStringSharedPreference(MainActivity.this,ipSP);
+                    String userIpStr= MyFunc.getStringSharedPreference(MainActivity.this,ipSP);
                     String userPortStr=MyFunc.getStringSharedPreference(MainActivity.this,portSP);
                     if(userIpStr!=null&&userPortStr!=null&&!userIpStr.equals("")&&!userPortStr.equals("")) {
                         dp = new DatagramPacket(buf, buf.length, new InetSocketAddress(userIpStr, Integer.parseInt(userPortStr)));
@@ -642,5 +647,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         legend.setEnabled(false);
         lineChart.animateX(0); // 立即执行的动画,x轴 time
     }
-
 }

@@ -17,6 +17,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.xysss.ramandemo.adapter.MySelfLibraryAdapter;
+import com.xysss.ramandemo.dao.CustomLibs;
+import com.xysss.ramandemo.db.MyDataBaseHelper;
+import com.xysss.ramandemo.utils.DBUtils;
+
 import java.util.ArrayList;
 
 public class historyActivity extends AppCompatActivity {

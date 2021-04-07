@@ -1,4 +1,4 @@
-package com.xysss.ramandemo;
+package com.xysss.ramandemo.dao;
 
 /**
  * Author:bysd-2

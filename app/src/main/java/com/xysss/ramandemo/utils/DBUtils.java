@@ -1,8 +1,12 @@
-package com.xysss.ramandemo;
+package com.xysss.ramandemo.utils;
 
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.xysss.ramandemo.dao.CustomLibs;
+import com.xysss.ramandemo.db.DBInfo;
+import com.xysss.ramandemo.db.MyDataBaseHelper;
 
 import java.util.ArrayList;
 

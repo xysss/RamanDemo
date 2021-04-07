@@ -1,4 +1,4 @@
-package com.xysss.ramandemo;
+package com.xysss.ramandemo.adapter;
 
 import android.content.Context;
 import android.os.Handler;
@@ -8,6 +8,10 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.xysss.ramandemo.R;
+import com.xysss.ramandemo.dao.CustomLibs;
+
 import java.util.ArrayList;
 import java.util.List;
 
